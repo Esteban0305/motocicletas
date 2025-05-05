@@ -2,7 +2,7 @@
 FROM php:8.2-apache
 
 # Instala extensiones necesarias para SQLite
-RUN docker-php-ext-install pdo pdo_sqlite
+RUN docker-php-ext-install pdo 
 
 # Copia el contenido del proyecto al contenedor
 COPY . /var/www/html/
